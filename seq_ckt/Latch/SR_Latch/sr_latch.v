@@ -44,7 +44,7 @@ module sr_latch(input enb,rst,s,r , output reg q,qbar
 //          end  
 //   if(enb) begin
           
-          //USING NOR SR LATCH LOGIC
+          //USING Nand SR LATCH LOGIC
           //memmory state 
           if(s==0 && r==0) begin
              q<=q;
