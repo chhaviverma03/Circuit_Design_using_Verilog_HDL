@@ -74,6 +74,7 @@ input clk,rst,d_in,output reg detected
       end  
       
       //output logic synchronous with clock
+      //mealy- o/p depends on ps as well as input look at s3 state 
       always@(posedge clk) begin
         if(rst)
            detected=0;

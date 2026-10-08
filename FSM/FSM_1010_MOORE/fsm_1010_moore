@@ -81,6 +81,7 @@ input clk,rst,din,output reg detected
             end
             
         //output logic
+        //output depends on ps only
         always@(posedge clk) begin
         if(rst) 
           detected=1'b0;
